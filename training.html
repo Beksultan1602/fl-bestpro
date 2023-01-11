@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+<header>
+  <div class="py-4 border-b-2 border-b-[#e5e5eb] px-4">
+    <div class="flex justify-between items-center container mx-auto">
+      <img class="w-36 sm:w-auto" src="./assets/logo.png" alt="">
+      <div class="flex gap-16 hidden md:flex">
+        <ul class="flex gap-8">
+          <li class="flex items-center gap-2 font-semibold">
+            <img src="./assets/location_on.png" alt="">
+            <p>Denver, Colorado</p>
+          </li>
+          <li class="flex items-center gap-2 font-semibold">
+            <img src="./assets/watch_later.png" alt="">
+            <p>8:00 AM-6:00 PM</p>
+          </li>
+          <li class="flex items-center gap-2 font-semibold">
+            <img src="./assets/call.png" alt="">
+            <p>(720) 722-6415</p>
+          </li>
+        </ul>
+        <button class="text-white py-3.5 px-8 bg-[#ff042b] font-bold">Book Online</button>
+      </div>
+      <button class="text-white py-3.5 px-8 bg-[#ff042b] md:hidden font-bold whitespace-nowrap">Book Online</button>
+    </div>
+  </div>
+  <nav class="pt-4 font-semibold test-base px-4 hidden md:block border-b-2 shadow">
+    <ul class="flex justify-between container mx-auto uppercase">
+      <li class="hover:border-b-4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./index.html">HOME</a>
+      </li>
+      <li class="hover:border-b-4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./residental.html">RESIDENTIAL</a>
+      </li>
+      <li class="hover:border-b-4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./commercial.html">COMMERCIAL</a>
+      </li>
+      <li class="hover:border-b-4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./industrial.html">INDUSTRIAL</a>
+      </li>
+      <li class="hover:border-b-4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./prices.html">PRICES</a>
+      </li>
+      <li class="hover:border-b-4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./coupons.html">COUPONS</a>
+      </li>
+      <li class="hover:border-b-4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./blog.html">BLOG</a>
+      </li>
+      <li class="hover:border-b-4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./training.html">TRAINING</a>
+      </li>
+      <li class="hover:border-b-4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./company.html">COMPANY</a>
+      </li>
+    </ul>
+  </nav>
+  <nav id="navMobile" class="pt-4 font-semibold test-base px-4 hidden border-b-2 shadow h-1/2 w-full absolute z-50 bg-white ">
+    <ul class="flex justify-between container mx-auto uppercase flex-col">
+      <li class="hover:border-b-4 w-1/4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./index.html">HOME</a>
+      </li>
+      <li class="hover:border-b-4 w-1/4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./residental.html">RESIDENTIAL</a>
+      </li>
+      <li class="hover:border-b-4 w-1/4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./commercial.html">COMMERCIAL</a>
+      </li>
+      <li class="hover:border-b-4 w-1/4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./industrial.html">INDUSTRIAL</a>
+      </li>
+      <li class="hover:border-b-4 w-1/4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./prices.html">PRICES</a>
+      </li>
+      <li class="hover:border-b-4 w-1/4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./coupons.html">COUPONS</a>
+      </li>
+      <li class="hover:border-b-4 w-1/4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./blog.html">BLOG</a>
+      </li>
+      <li class="hover:border-b-4 w-1/4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./training.html">TRAINING</a>
+      </li>
+      <li class="hover:border-b-4 w-1/4 hover:border-b-[#ff042b] transition pb-2 border-b-4 border-white">
+        <a href="./company.html">COMPANY</a>
+      </li>
+    </ul>
+    <p id="cancel" class="cancel absolute top-4 right-8 text-2xl">X</p>
+  </nav>
+  <ul class="flex gap-8 md:hidden container mx-auto py-4 font-semibold test-base px-4 justify-between">
+    <li class="hidden sm:flex items-center gap-2 font-semibold">
+      <img src="./assets/location_on.png" alt="">
+      <p>Denver, Colorado</p>
+    </li>
+    <li class="hidden sm:flex items-center gap-2 font-semibold">
+      <img src="./assets/watch_later.png" alt="">
+      <p>8:00 AM-6:00 PM</p>
+    </li>
+    <li class="flex items-center gap-2 font-semibold">
+      <img src="./assets/call.png" alt="">
+      <p>(720) 722-6415</p>
+    </li>
+    <div class="space-y-2 hamb" id="hamb">
+      <div class="bar w-8 h-0.5 bg-gray-600"></div>
+      <div class="bar w-8 h-0.5 bg-gray-600"></div>
+      <div class="bar w-8 h-0.5 bg-gray-600"></div>
+    </div>
+  </ul>
+</header>
+<div class="container mx-auto my-8 px-4">
+  <h2 class="font-bold text-5xl mb-8 ">LG Fridge repair</h2>
+  <div class="flex justify-between gap-6 flex-col xl:flex-row">
+    <div class="order-2 xl:-order-1">
+      <div class="mb-6">
+        <p class="mb-6">The customer was complaining about error code on the display of refrigerator LG as well as the user interface does not work like it is supposed to, the customer was unable to switch dispenser from ice to the water.</p>
+        <div class="border p-2">
+          <img class="mx-auto" src="./assets/hot.png" alt="">
+
+        </div>
+      </div>
+      <div class="mb-6">
+        <p class="mb-4">This error code means no connectivity between the user interface board and the main control board.</p>
+        <p class="mb-6">We start from disassembling dispenser and removing the freezer door hinge cover.</p>
+        <div class="border p-2">
+          <img class="mx-auto" src="./assets/freezer-2.png" alt="">
+        </div>
+      </div>
+      <div class="mb-6">
+        <p class="mb-4">User interface connected to the control by the 4 wires harness, we checked all of these wires, and find out one of the wires (responsible for data transmission) was broken inside the door.</p>
+        <p class="mb-6">We found the broken wire.</p>
+        <div class="border p-2">
+          <img class="mx-auto" src="./assets/lines.png" alt="">
+        </div>
+      </div>
+      <div class="mb-6">
+        <p class="mb-4">The harness for user interface comes only together with the freezer door and cost of this part assembly around $500</p>
+        <p class="mb-4">We looked at the diagram and find out if the customer can sacrifice the light of the dispenser, we can use these wires and restore user interface functionality.</p>
+        <p class="mb-6">We agreed with the customer about this modification</p>
+        <div class="flex gap-6 border p-2 flex-wrap">
+          <img class="mx-auto" src="./assets/image%2058.png" alt="">
+          <img class="mx-auto" src="./assets/image%2059.png" alt="">
+        </div>
+      </div>
+      <div class="mb-6">
+
+        <p class="mb-6">And fixed the malfunction by using the wires for the dispenser light.</p>
+        <div class="border p-2">
+          <img class="mx-auto" src="./assets/image%2060.png" alt="">
+        </div>
+      </div>
+      <p class="font-semibold mb-16">Fridge works fine!</p>
+      <div class="flex gap-4 items-center cursor-pointer">
+        <img src="./assets/blue-arrow.png" alt="">
+        <p class="font-semibold text-[#0050B2]">Back to section</p>
+      </div>
+    </div>
+    <div>
+      <h2 class="uppercase font-bold text-lg mb-4">Useful articles</h2>
+      <p class="text-[#0050B2]">Induction cooktop KitchenAid repair</p>
+      <hr class="my-4">
+      <p class="text-[#0050B2]">Fuse Team – you have a problem – we have a solution
+      </p>
+      <hr class="my-4">
+      <p class="text-[#0050B2]">How to keep a microwave in a good condition for a long time?
+      </p>
+      <hr class="my-4">
+      <p class="text-[#0050B2]">How to keep a range\stove\oven in a good condition for a long time?
+      </p>
+      <hr class="my-4">
+      <p class="text-[#0050B2]">How to keep a dishwasher in a good condition for a long time?
+      </p>
+      <hr class="my-4">
+      <p class="text-[#0050B2]">How to keep a dryer in a good condition for a long time?
+      </p>
+      <hr class="my-4">
+      <p class="text-[#0050B2]">How to keep a washing machine in a good condition for a long time?</p>
+      <hr class="my-4">
+      <p class="text-[#0050B2]">How to keep a refrigerator in a good condition for a long time?</p>
+      <hr class="my-4">
+      <p class="text-[#0050B2]">What brand of home appliances to buy?</p>
+      <hr class="my-4">
+    </div>
+  </div>
+  <hr class="mt-16">
+  <div class="container mx-auto pt-16 pb-20">
+    <ul class="flex flex-col sm:flex-row justify-between items-center gap-6 text-center">
+      <li class="flex flex-col justify-center items-center max-w-sm">
+        <img src="./assets/Experts.png" alt="">
+        <p class="font-medium text-lg">Trained Experts</p>
+      </li>
+      <li class="flex flex-col justify-center items-center max-w-sm">
+        <img src="./assets/Guarantee.png" alt="">
+        <p class="font-medium text-lg">100% Money Back Guarantee if you not satisfied</p>
+      </li>
+      <li class="flex flex-col justify-center items-center max-w-sm">
+        <img src="./assets/Insurance.png" alt="">
+        <p class="font-medium text-lg">Insurance for your equipment</p>
+      </li>
+      <li class="flex flex-col justify-center items-center max-w-sm">
+        <img src="./assets/Warranty.png" alt="">
+        <p class="font-medium text-lg">6 months Warranty for replaced parts and labor</p>
+      </li>
+    </ul>
+  </div>
+
+</div>
+<div class="container mx-auto mb-20">
+  <div class="bg-[#F5F5F7] py-16 px-4 sm:px-28">
+    <h2 class=" font-bold text-3xl uppercase mb-8 text-center">Get in touch with us</h2>
+    <div class="flex justify-between items-center gap-4 mb-4">
+      <input placeholder="Name" class="p-4 border w-full outline-purple-400" type="text">
+      <input placeholder="Phone" class="p-4 border w-full outline-purple-400" type="tel">
+    </div>
+    <textarea placeholder="Message" class="p-4 border w-full outline-purple-400 mb-10"></textarea>
+    <div class="flex justify-between items-center">
+      <div class="flex gap-4">
+        <input type="checkbox" name="" id="check">
+        <label class="text-[#76767A]" for="check">I’m not a spammer</label>
+      </div>
+      <button class="uppercase text-white py-3.5 px-8 bg-[#ff042b] font-bold">Send message</button>
+    </div>
+  </div>
+</div>
+<div class="relative">
+  <div class="max-w-[430px] bg-white pl-14 block md:hidden">
+    <h2 class=" font-bold text-3xl">Service Area</h2>
+    <p class="pb-6">Do not hesitate, call or book us online!</p>
+    <ul class="">
+      <li class="flex gap-2 items-center mb-6">
+        <img src="./assets/call.png" alt="">
+        <p class="font-bold">(720) 722-6415</p>
+      </li>
+      <li class="flex gap-2 items-center mb-6">
+        <img src="./assets/location_on.png" alt="">
+        <p class="font-bold">4133 S Lewiston Cir, Aurora, CO 80013
+        </p>
+      </li>
+      <li class="flex gap-2 items-center mb-6">
+        <img src="./assets/mail_outline.png" alt="">
+        <p class="font-bold">support@bestprorepair.com</p>
+      </li>
+      <li class="flex gap-2 items-center mb-6">
+        <img src="./assets/watch_later.png" alt="">
+        <p class="font-bold">Hours: 8:00 AM-6:00 PM</p>
+      </li>
+    </ul>
+  </div>
+  <iframe class="w-full h-[600px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46773.4509192914!2d74.5242624!3d42.8867584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9f5ce482549%3A0x6d3564aad24cb4fd!2z0KDRi9C90L7QuiDQmtGD0LTQsNC50LHQtdGA0LPQtdC9INCw0LLRgtC-0LfQsNC_0YfQsNGB0YLQuA!5e0!3m2!1sru!2skg!4v1672836807002!5m2!1sru!2skg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="hidden md:block max-w-[430px] absolute p-4 top-24 left-44 bg-white shadow">
+    <h2 class=" font-bold text-3xl">Service Area</h2>
+    <p class="pb-6">Do not hesitate, call or book us online!</p>
+    <ul class="">
+      <li class="flex gap-2 items-center mb-6">
+        <img src="./assets/call.png" alt="">
+        <p class="font-bold">(720) 722-6415</p>
+      </li>
+      <li class="flex gap-2 items-center mb-6">
+        <img src="./assets/location_on.png" alt="">
+        <p class="font-bold">4133 S Lewiston Cir, Aurora, CO 80013
+        </p>
+      </li>
+      <li class="flex gap-2 items-center mb-6">
+        <img src="./assets/mail_outline.png" alt="">
+        <p class="font-bold">support@bestprorepair.com</p>
+      </li>
+      <li class="flex gap-2 items-center mb-6">
+        <img src="./assets/watch_later.png" alt="">
+        <p class="font-bold">Hours: 8:00 AM-6:00 PM</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<footer class="bg-[#42454A]">
+  <div class="container mx-auto">
+    <div class="flex text-white pt-16 justify-between flex-wrap gap-4 px-4">
+      <ul class="flex flex-col gap-2">
+        <h4 class="font-semibold">RESIDENTIAL</h4>
+        <li class="cursor-pointer hover:underline">Refrigerator Repair</li>
+        <li class="cursor-pointer hover:underline">Washer Repair</li>
+        <li class="cursor-pointer hover:underline">Dryer Repair Denver</li>
+        <li class="cursor-pointer hover:underline">Oven Repair</li>
+        <li class="cursor-pointer hover:underline">Cooktop Repair</li>
+        <li class="cursor-pointer hover:underline">Microwave Repair</li>
+        <li class="cursor-pointer hover:underline">Microwave & Combo Oven Repair</li>
+        <li class="cursor-pointer hover:underline">Wine Cooler Repair</li>
+        <li class="cursor-pointer hover:underline">Double Oven</li>
+        <li class="cursor-pointer hover:underline">Range/Stove Repair</li>
+        <li class="cursor-pointer hover:underline">Viking Appliance Repair</li>
+        <li class="cursor-pointer hover:underline">Wolf appliance repair Sub-zero</li>
+        <li class="cursor-pointer hover:underline">Refrigerators Repair</li>
+        <li class="cursor-pointer hover:underline">Cove Dishwashers Repair</li>
+      </ul>
+      <div class="">
+        <ul class="flex flex-col gap-2 mb-10">
+          <h4 class="font-semibold">COMMERCIAL</h4>
+          <li class="cursor-pointer hover:underline">Blast Chiller Repair</li>
+          <li class="cursor-pointer hover:underline">Refrigerator Commercial Repair</li>
+          <li class="cursor-pointer hover:underline">Freezers Repair</li>
+          <li class="cursor-pointer hover:underline">Convection Oven Repair</li>
+          <li class="cursor-pointer hover:underline">Cooktop Commercial Repair</li>
+          <li class="cursor-pointer hover:underline">Microwave Repair</li>
+          <li class="cursor-pointer hover:underline">Dishwasher</li>
+          <li class="cursor-pointer hover:underline">Pizza Oven</li>
+          <li class="cursor-pointer hover:underline">Commercial Ice Machine Repair</li>
+        </ul>
+        <ul class="flex flex-col gap-2">
+          <h4 class="font-semibold">Payment</h4>
+          <li class="cursor-pointer hover:underline">Prices</li>
+          <li class="cursor-pointer hover:underline">Coupons & Discounts</li>
+        </ul>
+      </div>
+      <ul class="flex flex-col gap-2">
+        <h4 class="font-semibold">INDUSTRIAL</h4>
+        <li class="cursor-pointer hover:underline">Walk-in Refrigerator & Walk-in Freezer</li>
+        <li class="cursor-pointer hover:underline">Tunnel Oven Repair</li>
+        <li class="cursor-pointer hover:underline">Commercial</li>
+        <li class="cursor-pointer hover:underline">Industrial Cooktop Repair</li>
+        <li class="cursor-pointer hover:underline">Industrial Microwave</li>
+        <li class="cursor-pointer hover:underline">Industrial Dishwasher</li>
+        <li class="cursor-pointer hover:underline">Pizza Oven</li>
+        <li class="cursor-pointer hover:underline">Industrial Washer</li>
+        <li class="cursor-pointer hover:underline">Industrial Dryer Repair</li>
+      </ul>
+      <div>
+        <ul class="flex flex-col gap-2 mb-10">
+          <h4 class="font-semibold">BLOG</h4>
+          <li class="cursor-pointer hover:underline">Advices</li>
+          <li class="cursor-pointer hover:underline">Our Repairs
+          </li>
+        </ul>
+        <ul class="flex flex-col gap-2 mb-10">
+          <h4 class="font-semibold">TRAINING</h4>
+          <li class="cursor-pointer hover:underline">Manuals for Appliance Repair
+          </li>
+          <li class="cursor-pointer hover:underline">Manuals for HVAC Repair
+          </li>
+        </ul>
+        <ul class="flex flex-col gap-2 mb-10">
+          <h4 class="font-semibold">Company</h4>
+          <li class="cursor-pointer hover:underline">About Us</li>
+          <li class="cursor-pointer hover:underline">Customer’s Reviews</li>
+          <li class="cursor-pointer hover:underline">Legal information</li>
+          <li class="cursor-pointer hover:underline">Terms and Conditions</li>
+          <li class="cursor-pointer hover:underline">
+            <a href="./contacts.html">Contacts</a>
+          </li>
+          <li class="cursor-pointer hover:underline">Our service location in Colorado</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="pb-10">
+    <div class="pb-10 flex flex-col sm:flex-row justify-between items-start gap-4 sm:gap-0 sm:items-center px-4">
+      <div class="flex gap-10 text-white">
+        <p class="">© 2022 BestPro. All Rights Reserved</p>
+        <p class="font-semibold">Sitemap</p>
+      </div>
+      <div>
+        <ul class="flex items-center gap-4">
+          <li class="cursor-pointer hover:bg-gray-400 bg-gray-500 w-12 h-12 rounded-full flex justify-center items-center">
+            <img src="./assets/afcb.png" alt="">
+          </li>
+          <li class="cursor-pointer hover:bg-gray-400 bg-gray-500 w-12 h-12 rounded-full flex justify-center items-center">
+            <img src="./assets/ayou.png" alt="">
+          </li>
+          <li class="cursor-pointer hover:bg-gray-400 bg-gray-500 w-12 h-12 rounded-full flex justify-center items-center">
+            <img src="./assets/ainst.png" alt="">
+          </li>
+          <li class="cursor-pointer hover:bg-gray-400 bg-gray-500 w-12 h-12 rounded-full flex justify-center items-center">
+            <img src="./assets/aflow.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./navbar.js"></script>
+</body>
+</html>
